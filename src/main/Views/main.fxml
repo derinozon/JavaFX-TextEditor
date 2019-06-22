@@ -1,0 +1,40 @@
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Controller">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="m_new" mnemonicParsing="false" onAction="#FileNew" text="New" />
+                        <MenuItem fx:id="m_open" mnemonicParsing="false" onAction="#FileOpen" text="Open" />
+                        <MenuItem fx:id="m_save" mnemonicParsing="false" onAction="#FileSave" text="Save" />
+                        <MenuItem fx:id="m_save_as" mnemonicParsing="false" onAction="#FileSaveAs" text="Save As" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Window">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TabPane fx:id="tab_master" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" VBox.vgrow="ALWAYS">
+            <tabs>
+
+            </tabs>
+        </TabPane>
+    </children>
+</VBox>
